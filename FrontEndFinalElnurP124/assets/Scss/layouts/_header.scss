@@ -1,0 +1,123 @@
+header {
+    .myNavbar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        height: 6.25rem;
+        //background-color: rgba(255, 0, 0, 0.267);
+        transition: all .3s ease-in-out;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        .container {
+            border: 1px solid green;
+            .row {
+                .col-lg-2 {
+                    border: 1px solid red;
+                    .logo {
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        margin-top: 3%;
+                    }
+                }
+                .col-lg-6{
+                    border: 1px solid blue;
+                    .links{
+                        height: 50px;
+                        display: flex;
+                        align-items: center; 
+                        margin-top: 1%;               
+                        ul{
+                            margin-bottom: 0;
+                            .homelink{
+                                padding-right: 20px;
+                                padding-left: 0;
+                            }
+                            li{
+                                display: inline-block;
+                                padding:0 20px;
+                                a{
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    color: tools.$color_writings_light;
+                                    letter-spacing: 1px;
+                                    line-height: 40px;
+                                    text-decoration: none;
+                                    i{
+                                        font-size: 11px;
+                                    }
+                                }
+                            }
+                            .discoverlink{
+                                .dropdowndiscover{
+                                    position: absolute;
+                                    top: 50px;
+                                    z-index: -1;
+                                    border-radius: 5px;
+                                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                                    // background-color: rgba(135, 207, 235, 0.603);
+                                    ul{
+                                        li{
+                                           
+                                            a{
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .col-lg-4{
+                    border: 1px solid greenyellow;
+                    .buttons{
+                        display: flex;
+                        margin-top: 4%;
+                        justify-content: end;
+                        ul{
+                            li{
+                                display: inline-block;
+                                a{
+                                    text-decoration: none;
+                                    font-weight: 700;
+                                    font-size: 12px;
+                                    border: 1px solid tools.$color_purple;
+                                    padding: 7px 30px;
+                                    border-radius: 5px;
+                                    letter-spacing: 0.5px;
+                                    line-height: 31px;
+                                    text-align: center;
+                                    margin-right: 0;
+                                    margin-left: 10px;
+                                }
+                                #signin{      
+                                    color: tools.$color_purple;
+                                    background: none;
+                                    transition: .2s ease-in-out;
+                                    &:hover{
+                                        background-color: tools.$color_purple;
+                                        color: tools.$color_white;
+                                    }
+                                }
+                                #signup{
+                                    color: tools.$color_white;
+                                    background-color: tools.$color_purple;
+                                    transition: .2s ease-in-out;
+                                    &:hover{
+                                        color: tools.$color_purple;
+                                        background: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
