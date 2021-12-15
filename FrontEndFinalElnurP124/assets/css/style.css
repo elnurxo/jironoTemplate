@@ -1,4 +1,4 @@
-* {
+*, ul {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -106,99 +106,211 @@
   }
 }
 
-header .myNavbar {
+.myNavbar {
   position: fixed;
   top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  width: 100%;
   z-index: 1;
-  height: 6.25rem;
+  height: 100px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-header .myNavbar .container {
-  border: 1px solid green;
+.myNavbar .logo {
+  height: 100px;
+  width: 91px;
 }
-header .myNavbar .container .row .col-lg-2 {
-  border: 1px solid red;
+.myNavbar .logo a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-header .myNavbar .container .row .col-lg-2 .logo {
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 3%;
-}
-header .myNavbar .container .row .col-lg-6 {
-  border: 1px solid blue;
-}
-header .myNavbar .container .row .col-lg-6 .links {
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 1%;
-}
-header .myNavbar .container .row .col-lg-6 .links ul {
+.myNavbar .col-lg-6 .links {
+  height: 100px;
+  line-height: 100px;
   margin-bottom: 0;
 }
-header .myNavbar .container .row .col-lg-6 .links ul .homelink {
+.myNavbar .col-lg-6 .links .homelink {
   padding-right: 20px;
   padding-left: 0;
 }
-header .myNavbar .container .row .col-lg-6 .links ul li {
+.myNavbar .col-lg-6 .links li {
   display: inline-block;
   padding: 0 20px;
+  margin: -2px;
 }
-header .myNavbar .container .row .col-lg-6 .links ul li a {
+.myNavbar .col-lg-6 .links li a {
+  display: block;
   font-size: 14px;
   font-weight: 600;
   color: #6F8BA4;
   letter-spacing: 1px;
   line-height: 40px;
   text-decoration: none;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
 }
-header .myNavbar .container .row .col-lg-6 .links ul li a i {
+.myNavbar .col-lg-6 .links li a:hover {
+  color: #585CE9;
+}
+.myNavbar .col-lg-6 .links li a i {
   font-size: 11px;
 }
-header .myNavbar .container .row .col-lg-6 .links ul .discoverlink .dropdowndiscover {
+.myNavbar .col-lg-6 .links .discoverlink {
+  position: relative;
+}
+.myNavbar .col-lg-6 .links .discoverlink:hover > .dropdowndiscover {
+  visibility: visible;
+  opacity: 1;
+  top: 42px;
+  z-index: 1;
+}
+.myNavbar .col-lg-6 .links .discoverlink .dropdowndiscover {
+  visibility: hidden;
   position: absolute;
-  top: 50px;
+  top: 20px;
+  left: 15px;
+  width: 200px;
+  opacity: 0;
   z-index: -1;
-  border-radius: 5px;
+  border-radius: 7px;
+  -webkit-transition: top 0.5s, opacity 0.5s;
+  transition: top 0.5s, opacity 0.5s;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-header .myNavbar .container .row .col-lg-4 {
-  border: 1px solid greenyellow;
+.myNavbar .col-lg-6 .links .discoverlink .dropdowndiscover:hover {
+  visibility: visible;
+  opacity: 1;
+  top: 42px;
 }
-header .myNavbar .container .row .col-lg-4 .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 4%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+.myNavbar .col-lg-6 .links .discoverlink .dropdowndiscover li {
+  display: block;
+  border-bottom: 1px solid #f5f5f5;
+  background-color: #fff;
 }
-header .myNavbar .container .row .col-lg-4 .buttons ul li {
+.myNavbar .col-lg-6 .links .discoverlink .dropdowndiscover li a {
+  display: block;
+  color: #3B566E;
+  font-size: 13px;
+}
+.myNavbar .col-lg-6 .links .discoverlink .dropdowndiscover #gofeatures {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-left: 0px solid;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.myNavbar .col-lg-6 .links .discoverlink .dropdowndiscover #gofeatures:hover {
+  border-left: 4px solid #585CE9;
+  background-color: #f5f5f5;
+}
+.myNavbar .col-lg-6 .links .discoverlink .dropdowndiscover #goourteam,
+.myNavbar .col-lg-6 .links .discoverlink .dropdowndiscover #gopricingtable {
+  border-left: 0px solid;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.myNavbar .col-lg-6 .links .discoverlink .dropdowndiscover #goourteam:hover,
+.myNavbar .col-lg-6 .links .discoverlink .dropdowndiscover #gopricingtable:hover {
+  border-left: 4px solid #585CE9;
+  background-color: #f5f5f5;
+}
+.myNavbar .col-lg-6 .links .discoverlink .dropdowndiscover #golatestblogs {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: 0px solid;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  border-bottom: none !important;
+}
+.myNavbar .col-lg-6 .links .discoverlink .dropdowndiscover #golatestblogs:hover {
+  border-left: 4px solid #585CE9;
+  background-color: #f5f5f5;
+}
+.myNavbar .col-lg-6 .links .pageslink {
+  position: relative;
+}
+.myNavbar .col-lg-6 .links .pageslink:hover > .dropdownpages {
+  visibility: visible;
+  opacity: 1;
+  top: 42px;
+  z-index: 1;
+}
+.myNavbar .col-lg-6 .links .pageslink .dropdownpages {
+  visibility: hidden;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  width: 200px;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 7px;
+  -webkit-transition: top 0.5s, opacity 0.5s;
+  transition: top 0.5s, opacity 0.5s;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.myNavbar .col-lg-6 .links .pageslink .dropdownpages:hover {
+  visibility: visible;
+  opacity: 1;
+  top: 42px;
+}
+.myNavbar .col-lg-6 .links .pageslink .dropdownpages li {
+  display: block;
+  border-bottom: 1px solid #f5f5f5;
+  background-color: #fff;
+}
+.myNavbar .col-lg-6 .links .pageslink .dropdownpages li a {
+  display: block;
+  color: #3B566E;
+  font-size: 13px;
+}
+.myNavbar .col-lg-6 .links .pageslink .dropdownpages #goaboutus {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-left: 0px solid;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.myNavbar .col-lg-6 .links .pageslink .dropdownpages #goaboutus:hover {
+  border-left: 4px solid #585CE9;
+  background-color: #f5f5f5;
+}
+.myNavbar .col-lg-6 .links .pageslink .dropdownpages #gofeaturespages,
+.myNavbar .col-lg-6 .links .pageslink .dropdownpages #gofaqs {
+  border-left: 0px solid;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.myNavbar .col-lg-6 .links .pageslink .dropdownpages #gofeaturespages:hover,
+.myNavbar .col-lg-6 .links .pageslink .dropdownpages #gofaqs:hover {
+  border-left: 4px solid #585CE9;
+  background-color: #f5f5f5;
+}
+.myNavbar .col-lg-6 .links .pageslink .dropdownpages #goblog {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: 0px solid;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  border-bottom: none !important;
+}
+.myNavbar .col-lg-6 .links .pageslink .dropdownpages #goblog:hover {
+  border-left: 4px solid #585CE9;
+  background-color: #f5f5f5;
+}
+.myNavbar .buttons {
+  height: 100px;
+  line-height: 100px;
+  float: right;
+}
+.myNavbar .buttons li {
   display: inline-block;
 }
-header .myNavbar .container .row .col-lg-4 .buttons ul li a {
+.myNavbar .buttons li a {
   text-decoration: none;
   font-weight: 700;
   font-size: 12px;
@@ -211,27 +323,136 @@ header .myNavbar .container .row .col-lg-4 .buttons ul li a {
   margin-right: 0;
   margin-left: 10px;
 }
-header .myNavbar .container .row .col-lg-4 .buttons ul li #signin {
+.myNavbar .buttons li #signin {
   color: #585CE9;
   background: none;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-header .myNavbar .container .row .col-lg-4 .buttons ul li #signin:hover {
+.myNavbar .buttons li #signin:hover {
   background-color: #585CE9;
   color: #FFFFFF;
 }
-header .myNavbar .container .row .col-lg-4 .buttons ul li #signup {
+.myNavbar .buttons li #signup {
   color: #FFFFFF;
   background-color: #585CE9;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-header .myNavbar .container .row .col-lg-4 .buttons ul li #signup:hover {
+.myNavbar .buttons li #signup:hover {
   color: #585CE9;
+  background-color: #3B566E;
   background: none;
+}
+.myNavbar .hamburgercolumn {
+  display: none;
+  position: relative;
+}
+.myNavbar .hamburgercolumn a {
+  position: absolute;
+  right: 10px;
+  width: 32px;
+  height: 40px;
+  top: 23px;
+  cursor: pointer;
+}
+.myNavbar .hamburgercolumn a #topline {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 0;
+  display: block;
+  width: 21px;
+  height: 3px;
+  background-color: #3B566E;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+.myNavbar .hamburgercolumn a #midline {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25px;
+  display: block;
+  width: 30px;
+  height: 1.9px;
+  background-color: #3B566E;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+.myNavbar .hamburgercolumn a #bottomline {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: 0;
+  display: block;
+  width: 21px;
+  height: 3px;
+  background-color: #3B566E;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+.myNavbar .dropdownnav {
+  display: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.myNavbar .dropdownnav li {
+  border-bottom: 1px solid #f5f5f5;
+  background-color: #fff;
+}
+.myNavbar .dropdownnav li a {
+  text-decoration: none;
+  padding-left: 20px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 600;
+  color: #3B566E;
+}
+.myNavbar .dropdownnav li i {
+  float: right;
+  padding-top: 20px;
+  padding-right: 16px;
+  color: #3B566E;
+  font-size: 13px;
 }
 
+@media only screen and (max-width: 992px) {
+  .linkscol {
+    display: none;
+  }
+
+  .buttonscol {
+    display: none;
+  }
+
+  .hamburgercolumn {
+    display: block !important;
+  }
+
+  .dropdownnav {
+    display: block !important;
+  }
+
+  .myNavbar,
+.logo {
+    height: 80px !important;
+  }
+
+  .myNavbar {
+    background-color: #fff;
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  #hamburgerclick {
+    top: 12px;
+  }
+}
 footer {
   background: #585CE9;
   padding-top: 4.375rem;
@@ -329,5 +550,130 @@ footer .container .row .col-lg-12 .copyright {
   font-weight: 400;
   font-size: 0.874rem;
   letter-spacing: 0.055rem;
+}
+
+#welcome {
+  background-image: url("http://demo.tempload.com/jirono/assets/images/header-bg.svg");
+  background-repeat: no-repeat;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+#welcome .mycol1 h1 {
+  color: #1E3056;
+  line-height: 46px;
+  letter-spacing: 1px;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+#welcome .mycol1 h1::-moz-selection {
+  background-color: #585CE9;
+  color: #FFFFFF;
+}
+#welcome .mycol1 h1::selection {
+  background-color: #585CE9;
+  color: #FFFFFF;
+}
+#welcome .mycol1 h1 span {
+  color: #585CE9;
+}
+#welcome .mycol1 h1 span::-moz-selection {
+  background-color: #585CE9;
+  color: #FFFFFF;
+}
+#welcome .mycol1 h1 span::selection {
+  background-color: #585CE9;
+  color: #FFFFFF;
+}
+#welcome .mycol1 p {
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #697BA2;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+#welcome .mycol1 p::-moz-selection {
+  background-color: #585CE9;
+  color: #FFFFFF;
+}
+#welcome .mycol1 p::selection {
+  background-color: #585CE9;
+  color: #FFFFFF;
+}
+#welcome .mycol1 .learnmoresec1 {
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 42px;
+  margin-bottom: 0;
+  text-align: center;
+  border: none;
+  background: #585CE9;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #FFFFFF;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+#welcome .mycol1 .learnmoresec1:hover {
+  background: #4146e6;
+}
+#welcome .mycol2 .imagessec1 {
+  border: 1px solid hotpink;
+  position: relative;
+  height: 550px;
+}
+#welcome .mycol2 .imagessec1 .img1 {
+  border: 1px solid blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  float: left;
+  width: 49%;
+  height: 332px;
+}
+#welcome .mycol2 .imagessec1 .img2 {
+  border: 1px solid green;
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  width: 49%;
+  height: 251px;
+}
+#welcome .mycol2 .imagessec1 .img3 {
+  border: 1px solid black;
+  position: absolute;
+  bottom: 0;
+  float: left;
+  width: 49%;
+  height: 205px;
+}
+#welcome .mycol2 .imagessec1 .img4 {
+  border: 1px solid orange;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  float: right;
+  width: 49%;
+  height: 281px;
+}
+
+@media only screen and (max-width: 992px) {
+  .mycol1 {
+    text-align: center;
+  }
+
+  .mycol2 {
+    border: 3px solid black;
+  }
+
+  .learnmoresec1 {
+    margin-bottom: 50px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

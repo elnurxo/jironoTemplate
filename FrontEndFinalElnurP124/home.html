@@ -42,39 +42,60 @@
             <div class="myNavbar">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-6">
                             <div class="logo">
-                                <img src="assets/Media/navbarLogo.png" alt="logo">
+                                <a href="#">
+                                    <img src="assets/Media/navbarLogo.png" alt="logo">
+                                </a>         
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="links">
-                                <ul>
+                        <div class="col-lg-6 linkscol">
+                                <ul  class="links">
                                     <li class="homelink">
                                         <a href="#">Home</a>
                                     </li>
                                     <li class="discoverlink">
                                         <a href="#">Discover <i class="far fa-angle-down"></i></a>
                                         <!-- Discover Dropdown -->
-                                        <div class="dropdowndiscover">
-                                            <ul>
-                                                <li><a href="#">Features</a></li>
-                                                <li><a href="#">Our Team</a></li>
-                                                <li><a href="#">Pricing Tables</a></li>
-                                                <li><a href="#">Latest Blogs</a></li>
+                                            <ul class="dropdowndiscover">
+                                                <li id="gofeatures">
+                                                    <a href="#">Features</a>
+                                                </li>
+                                                <li id="goourteam">
+                                                    <a href="#">Our Team</a>
+                                                </li>
+                                                <li id="gopricingtable">
+                                                    <a href="#">Pricing Tables</a>
+                                                </li>
+                                                <li id="golatestblogs">
+                                                    <a href="#">Latest Blogs</a>
+                                                </li>    
                                             </ul>
-                                        </div>
                                     </li>
                                     <li class="pageslink">
                                         <a href="#">Pages <i class="far fa-angle-down"></i></a>
+                                        <!-- Pages Dropdown -->
+                                        <ul class="dropdownpages">
+                                            <li id="goaboutus">
+                                                <a href="#">About Us</a>
+                                            </li>
+                                            <li id="gofeaturespages">
+                                                <a href="#">Features</a>
+                                            </li>
+                                            <li id="gofaqs">
+                                                <a href="#">FAQ's</a>
+                                            </li>
+                                            <li id="goblog">
+                                                <a href="#">Blog</a>
+                                            </li>    
+                                        </ul>
                                     </li>
                                     <li class="contactlink">
                                         <a href="#">Contact</a>
                                     </li>
                                 </ul>
-                            </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 buttonscol">
                             <div class="buttons">
                                 <ul>
                                     <li>
@@ -86,12 +107,58 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="col-md-6 col-sm-6 col-6 hamburgercolumn">
+                            <div class="hamburgermenu">
+                                <a href="#" id="hamburgerclick">
+                                    <span id="topline"></span>
+                                    <span id="midline"></span>
+                                    <span id="bottomline"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dropdownnav">
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Discover</a>
+                                <i class="far fa-angle-down"></i>
+                                </li>
+                                <li><a href="">Pages</a>
+                                <i class="far fa-angle-down"></i>
+                                 </li>      
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
     </header>
     <main>
+        <section id="welcome">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mycol1">
+                            <h1>Industry Leading Managed Services and Staffing <span>Solutions</span></h1>
+                            <p>Proven methods to capture business priorities and goals as well as current pain points that enables measurable business outcomes.</p>
+                            <a href="#" class="learnmoresec1">LEARN MORE</a>
+                        </div>
+                        <div class="col-lg-6 col-md-11 col-sm-12 mycol2">
+                            <div class="imagessec1">
+                                <div class="img1">Lorem, ipsum dolor.</div>
+                                <div class="img2">Lorem, ipsum.</div>
+                                <div class="img3">Lorem ipsum dolor sit amet.</div>
+                                <div class="img4">Lorem, ipsum dolor.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- <div class="col-lg-3">card1</div>
+                        <div class="col-lg-3">card2</div>
+                        <div class="col-lg-3">card3</div>
+                        <div class="col-lg-3">card4</div> -->
+                    </div>
+                </div>
+        </section>
     </main>
-    <!-- <footer>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-12 col-sm-12 footercol1">
@@ -200,7 +267,7 @@
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
 
 </body>

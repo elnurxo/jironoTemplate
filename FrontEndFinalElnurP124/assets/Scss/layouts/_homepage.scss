@@ -1,0 +1,126 @@
+#welcome {
+    background-image: url("http://demo.tempload.com/jirono/assets/images/header-bg.svg");
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+    .mycol1 {
+        h1 {
+            color: tools.$color_writings_heading;
+            line-height: 46px;
+            letter-spacing: 1px;
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 20px;
+
+            &::selection {
+                background-color: tools.$color_purple;
+                color: tools.$color_white;
+            }
+
+            span {
+                color: tools.$color_purple;
+
+                &::selection {
+                    background-color: tools.$color_purple;
+                    color: tools.$color_white;
+                }
+            }
+        }
+
+        p {
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #697BA2;
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 40px;
+
+            &::selection {
+                background-color: tools.$color_purple;
+                color: tools.$color_white;
+            }
+        }
+
+        .learnmoresec1 {
+            display: inline-block;
+            text-decoration: none;
+            padding: 14px 42px;
+            margin-bottom: 0;
+            text-align: center;
+            border: none;
+            background: tools.$color_purple;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            color: tools.$color_white;
+            font-size: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                background: #4146e6;
+            }
+        }
+    } 
+    .mycol2 {
+        .imagessec1 {
+            border: 1px solid hotpink;
+            position: relative;
+            height: 550px;
+
+            .img1 {
+                border: 1px solid blue;
+                position: absolute;
+                top: 0;
+                left: 0;
+                float: left;
+                width: 49%;
+                height: 332px;
+            }
+
+            .img2 {
+                border: 1px solid green;
+                position: absolute;
+                top: 0;
+                right: 0;
+                float: right;
+                width: 49%;
+                height: 251px;
+            }
+
+            .img3 {
+                border: 1px solid black;
+                position: absolute;
+                bottom: 0;
+                float: left;
+                width: 49%;
+                height: 205px;
+            }
+
+            .img4 {
+                border: 1px solid orange;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                float: right;
+                width: 49%;
+                height: 281px;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .mycol1 {
+        text-align: center;
+    }
+    .mycol2{
+        border: 3px solid black;
+    }
+    .learnmoresec1{
+        margin-bottom: 50px !important;
+    }
+}
