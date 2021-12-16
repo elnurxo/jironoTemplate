@@ -1,4 +1,24 @@
 $(function () {
+ 
+  AOS.init({
+    duration:800,
+    offset: 300,
+    delay: 0,
+    // easing: 'ease',
+    // duration: 400,
+    // disable: false,
+    // once: false,
+    // mirror: false,
+    // anchorPlacement: 'top-bottom',
+    // startEvent: 'DOMContentLoaded',
+    // animatedClassName: 'aos-animate',
+    // initClassName: 'aos-init',
+    // useClassNames: false,
+    // disableMutationObserver: false,
+    // throttleDelay: 99,
+    // debounceDelay: 50
+  });
+
   $("#hamburgerclick").click(function () {
     if ($("#midline").width() == "30") {
       $("#topline").css({
@@ -79,3 +99,6 @@ function removeLoader() {
     $("#loadingwrapper").remove();
   });
 }
+
+
+

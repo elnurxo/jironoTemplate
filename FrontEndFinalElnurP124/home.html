@@ -26,6 +26,10 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
     <!-- End -->
+    <!-- AOS Plugin Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS Plugin JS-->
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Jirono - IT Solutions and Corporate Template</title>
 </head>
 
@@ -40,142 +44,317 @@
     <!-- Loading End -->
     <!-- Navbar Start -->
     <header>
-            <div class="myNavbar">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-2 col-md-6 col-sm-6 col-6">
-                            <div class="logo">
-                                <a href="#">
-                                    <img src="assets/Media/navbarLogo.png" alt="logo">
-                                </a>         
-                            </div>
+        <div class="myNavbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="assets/Media/navbarLogo.png" alt="logo">
+                            </a>
                         </div>
-                        <div class="col-lg-6 linkscol">
-                                <ul  class="links">
-                                    <li class="homelink">
-                                        <a href="#">Home</a>
+                    </div>
+                    <div class="col-lg-6 linkscol">
+                        <ul class="links">
+                            <li class="homelink">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="discoverlink">
+                                <a href="#">Discover <i class="far fa-angle-down"></i></a>
+                                <!-- Discover Dropdown -->
+                                <ul class="dropdowndiscover">
+                                    <li id="gofeatures">
+                                        <a href="#section2home">Features</a>
                                     </li>
-                                    <li class="discoverlink">
-                                        <a href="#">Discover <i class="far fa-angle-down"></i></a>
-                                        <!-- Discover Dropdown -->
-                                            <ul class="dropdowndiscover">
-                                                <li id="gofeatures">
-                                                    <a href="#">Features</a>
-                                                </li>
-                                                <li id="goourteam">
-                                                    <a href="#">Our Team</a>
-                                                </li>
-                                                <li id="gopricingtable">
-                                                    <a href="#">Pricing Tables</a>
-                                                </li>
-                                                <li id="golatestblogs">
-                                                    <a href="#">Latest Blogs</a>
-                                                </li>    
-                                            </ul>
+                                    <li id="goourteam">
+                                        <a href="#">Our Team</a>
                                     </li>
-                                    <li class="pageslink">
-                                        <a href="#">Pages <i class="far fa-angle-down"></i></a>
-                                        <!-- Pages Dropdown -->
-                                        <ul class="dropdownpages">
-                                            <li id="goaboutus">
-                                                <a href="#">About Us</a>
-                                            </li>
-                                            <li id="gofeaturespages">
-                                                <a href="#">Features</a>
-                                            </li>
-                                            <li id="gofaqs">
-                                                <a href="#">FAQ's</a>
-                                            </li>
-                                            <li id="goblog">
-                                                <a href="#">Blog</a>
-                                            </li>    
-                                        </ul>
+                                    <li id="gopricingtable">
+                                        <a href="#">Pricing Tables</a>
                                     </li>
-                                    <li class="contactlink">
-                                        <a href="#">Contact</a>
+                                    <li id="golatestblogs">
+                                        <a href="#">Latest Blogs</a>
                                     </li>
                                 </ul>
-                        </div>
-                        <div class="col-lg-4 buttonscol">
-                            <div class="buttons">
-                                <ul>
-                                    <li>
-                                        <a id="signin" href="#">SIGN IN</a>
+                            </li>
+                            <li class="pageslink">
+                                <a href="#">Pages <i class="far fa-angle-down"></i></a>
+                                <!-- Pages Dropdown -->
+                                <ul class="dropdownpages">
+                                    <li id="goaboutus">
+                                        <a href="#">About Us</a>
                                     </li>
-                                    <li>
-                                        <a id="signup" href="#">SIGN UP</a>
-                                    </li>  
+                                    <li id="gofeaturespages">
+                                        <a href="#">Features</a>
+                                    </li>
+                                    <li id="gofaqs">
+                                        <a href="#">FAQ's</a>
+                                    </li>
+                                    <li id="goblog">
+                                        <a href="#">Blog</a>
+                                    </li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-6 hamburgercolumn">
-                            <div class="hamburgermenu">
-                                <a href="#" id="hamburgerclick">
-                                    <span id="topline"></span>
-                                    <span id="midline"></span>
-                                    <span id="bottomline"></span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="dropdownnav">
+                            </li>
+                            <li class="contactlink">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 buttonscol">
+                        <div class="buttons">
                             <ul>
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Discover</a>
-                                <i class="far fa-angle-down"></i>
+                                <li>
+                                    <a id="signin" href="#">SIGN IN</a>
                                 </li>
-                                <li><a href="">Pages</a>
-                                <i class="far fa-angle-down"></i>
-                                 </li>      
-                                <li><a href="">Contact</a></li>
+                                <li>
+                                    <a id="signup" href="#">SIGN UP</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
+                    <div class="col-md-6 col-sm-6 col-6 hamburgercolumn">
+                        <div class="hamburgermenu">
+                            <a href="#" id="hamburgerclick">
+                                <span id="topline"></span>
+                                <span id="midline"></span>
+                                <span id="bottomline"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dropdownnav">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Discover</a>
+                                <i class="far fa-angle-down"></i>
+                            </li>
+                            <li><a href="">Pages</a>
+                                <i class="far fa-angle-down"></i>
+                            </li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
     </header>
     <!-- Navbar End -->
     <!-- Main Start -->
     <main>
-        <section id="welcome">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mycol1">
-                            <h1>Industry Leading Managed Services and Staffing <span>Solutions</span></h1>
-                            <p>Proven methods to capture business priorities and goals as well as current pain points that enables measurable business outcomes.</p>
-                            <a href="#" class="learnmoresec1">LEARN MORE</a>
-                        </div>
-                        <div class="col-lg-6 col-md-11 col-sm-12 mycol2">
-                            <div class="imagessec1">
-                                <div class="leftimages">
-                                    <div class="leftimageinside img1"><img src="http://demo.tempload.com/jirono/assets/images/photos/home/1.jpg" alt="image1"></div>
-                                    <div class="leftimageinside img2">
-                                        <i class="fas fa-play"></i>
-                                        <img src="http://demo.tempload.com/jirono/assets/images/photos/home/3.jpg" alt="image2">
-                                    </div>
+        <section id="section1home">
+            <div class="container">
+                <div class="row justify-content-between imgsrowsec1">
+                    <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mycol1">
+                        <h1>Industry Leading Managed Services and Staffing <span>Solutions</span></h1>
+                        <p>Proven methods to capture business priorities and goals as well as current pain points that
+                            enables measurable business outcomes.</p>
+                        <a href="#" class="learnmoresec1">LEARN MORE</a>
+                    </div>
+                    <div class="col-lg-6 col-md-11 col-sm-12 mycol2">
+                        <div class="imagessec1">
+                            <div class="leftimages">
+                                <div class="leftimageinside img1"><img
+                                        src="http://demo.tempload.com/jirono/assets/images/photos/home/1.jpg"
+                                        alt="image1"></div>
+                                <div class="leftimageinside img2">
+                                    <i class="fas fa-play"></i>
+                                    <img src="http://demo.tempload.com/jirono/assets/images/photos/home/3.jpg"
+                                        alt="image2">
                                 </div>
-                                <div class="rightimages">
-                                    <div class="rightimageinside img3">
-                                        <img src="http://demo.tempload.com/jirono/assets/images/photos/home/2.jpg" alt="image3">
-                                    </div>
-                                    <div class="rightimageinside img4">
-                                        <div class="sec1overlay">
-                                            <div class="contentsec1">
-                                                <h5>Our goal:</h5>
-                                                <p>“We create technology for a sustainable future.”</p>
-                                            </div>
+                            </div>
+                            <div class="rightimages">
+                                <div class="rightimageinside img3">
+                                    <img src="http://demo.tempload.com/jirono/assets/images/photos/home/2.jpg"
+                                        alt="image3">
+                                </div>
+                                <div class="rightimageinside img4">
+                                    <div class="sec1overlay">
+                                        <div class="contentsec1">
+                                            <h5>Our goal:</h5>
+                                            <p>“We create technology for a sustainable future.”</p>
                                         </div>
-                                        <img src="http://demo.tempload.com/jirono/assets/images/photos/home/1.jpg" alt="image4">
                                     </div>
+                                    <img src="http://demo.tempload.com/jirono/assets/images/photos/home/1.jpg"
+                                        alt="image4">
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="sec1cardswrapper">
                     <div class="row">
-                        <div class="col-lg-3">card1</div>
-                        <div class="col-lg-3">card2</div>
-                        <div class="col-lg-3">card3</div>
-                        <div class="col-lg-3">card4</div>
+                        <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up">
+                            <div class="cardssec1 card1sec1">
+                                <a href="#">
+                                    <i class="fas fa-cloud"></i>
+                                    <h5>Cloud Solutions</h5>
+                                    <p>Morbilling pharetra sapiening ut mattis viverra. Curabitur magna.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up">
+                            <div class="cardssec1 card2sec1">
+                                <a href="#">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <h5>Network Services</h5>
+                                    <p>Donec pellentesque turpis utium lorem imperdiet semper viverra.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up">
+                            <div class="cardssec1 card3sec1">
+                                <a href="#">
+                                    <i class="fas fa-video"></i>
+                                    <h5>Webcast Services</h5>
+                                    <p>Facilisis arcu ligula, malesuada id tincidunt laoreet, facilisis at justo.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up">
+                            <div class="cardssec1 card4sec1">
+                                <a href="#">
+                                    <i class="fas fa-server"></i>
+                                    <h5>Disaster Recovery</h5>
+                                    <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo.</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section id="section2home">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-6 sec2leftside">
+                        <h2>Cloud Services</h2>
+                        <p>Phasellus vitae velit sit amet diam semper commodo quis quis libero. Morbi consequat arcu
+                            augue, molestie faucibus metus ullamcorper vel.</p>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 secbuttons">
+                                <a href="#" id="firstasec2">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>NearCloud</span>
+                                </a>
+                                <a href="#" class="othersasec2">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>Backup Systems</span>
+                                </a>
+                                <a href="#" class="othersasec2">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>API Cloud</span>
+                                </a>
+                                <a href="#" class="othersasec2">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>Web Services</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 secbuttons">
+                                <a href="#" class="othersasec2">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>Office Cloud</span>
+                                </a>
+                                <a href="#" class="othersasec2">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>Hybrid Cloud</span>
+                                </a>
+                                <a href="#" class="othersasec2">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>SDK Cloud</span>
+                                </a>
+                                <a href="#" class="othersasec2">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>Cloud Hosting</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 sec2rightside" data-aos="fade-left">
+                        <img src="http://demo.tempload.com/jirono/assets/images/photos/features/blue-1.png"
+                            alt="section2image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section3home">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-5 sec3leftside" data-aos="fade-right">
+                          <img src="http://demo.tempload.com/jirono/assets/images/photos/features/blue-2.png" alt="section2image">
+                    </div>
+                    <div class="col-lg-6 sec3rightside">
+                        <h2>Design & Development</h2>
+                        <p>Phasellus vitae velit sit amet diam semper commodo quis quis libero. Morbi consequat arcu
+                            augue, molestie faucibus metus ullamcorper vel.</p>
+                        <div class="row">
+                             <div class="col-lg-6 col-md-6 col-sm-12 sec3buttons">
+                                <a href="#" id="firstasec3">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>Web Design</span>
+                                </a>
+                                <a href="#" class="othersasec3">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>Android Developments</span>
+                                </a>
+                                <a href="#" class="othersasec3">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>Back-End</span>
+                                </a>
+                                <a href="#" class="othersasec3">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>e-Commerce</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 sec3buttons">
+                                <a href="#" class="othersasec3">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>Mobile App Design</span>
+                                </a>
+                                <a href="#" class="othersasec3">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>iOS Development</span>
+                                </a>
+                                <a href="#" class="othersasec3">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>Front-End</span>
+                                </a>
+                                <a href="#" class="othersasec3">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>Print Design</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section4home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="sec4col1 colssec4">
+                            <span>96</span>
+                            <h3>Project<br>Complate</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="sec4col2 colssec4">
+                            <span>190</span>
+                            <h3>Happy<br>Customer</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="sec4col3 colssec4">
+                            <span>12</span>
+                            <h3>Experienced<br>Staff</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="sec4col4 colssec4">
+                            <span>46</span>
+                            <h3>Ongoing<br>Project</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <!-- Main End -->
@@ -249,37 +428,37 @@
                 <div class="col-lg-3 col-md-4 col-sm-12 footercol4">
                     <h5>Contact Us</h5>
                     <div class="footeradress">
-                    <p>455 West Orchard Street</p>
-                    <p>Kings Mountain, NC 28086</p>
-                    <p>Phone: (272) 211-7370</p>
-                    <p>E-Mail:support@yourbrand.com</p>
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank">
-                                <i class="fab fa-twitter-square"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.google.com/" target="_blank">
-                                <i class="fab fa-google-plus-square"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/" target="_blank">
-                                <i class="fab fa-github-square"></i>
-                            </a>
-                        </li>
-                    </ul>
+                        <p>455 West Orchard Street</p>
+                        <p>Kings Mountain, NC 28086</p>
+                        <p>Phone: (272) 211-7370</p>
+                        <p>E-Mail:support@yourbrand.com</p>
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank">
+                                    <i class="fab fa-twitter-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com/" target="_blank">
+                                    <i class="fab fa-google-plus-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/" target="_blank">
+                                    <i class="fab fa-github-square"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -291,6 +470,7 @@
         </div>
     </footer>
     <!-- Footer End -->
+    
 </body>
 
 </html>
