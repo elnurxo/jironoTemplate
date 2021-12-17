@@ -1,24 +1,12 @@
 $(function () {
- 
+  // AOS Plugin
   AOS.init({
-    duration:800,
+    duration: 800,
     offset: 300,
     delay: 0,
-    // easing: 'ease',
-    // duration: 400,
-    // disable: false,
-    // once: false,
-    // mirror: false,
-    // anchorPlacement: 'top-bottom',
-    // startEvent: 'DOMContentLoaded',
-    // animatedClassName: 'aos-animate',
-    // initClassName: 'aos-init',
-    // useClassNames: false,
-    // disableMutationObserver: false,
-    // throttleDelay: 99,
-    // debounceDelay: 50
   });
-
+  // Counter Plugin
+  // Hamburger Click
   $("#hamburgerclick").click(function () {
     if ($("#midline").width() == "30") {
       $("#topline").css({
@@ -83,8 +71,22 @@ $(function () {
     }
   });
 });
-
-
+//SELECT PRICE TABLE
+let selectplan = document.querySelectorAll(".selectplan");
+selectplan.forEach((ev) => {
+  ev.addEventListener("click", function (e) {
+    e.preventDefault();
+    let selected = this.closest(".pricingtable");
+    selectplan.forEach((element) => {
+      let selectedid = e.target.closest(".pricingtable").getAttribute("id");
+      let othersid = element.closest(".pricingtable").getAttribute("id");
+      if (othersid !== selectedid) {
+        element.closest(".pricingtable").classList.remove("selectedprice");
+      }
+      selected.classList.add("selectedprice");
+    });
+  });
+});
 // LOADER
 window.addEventListener("DOMContentLoaded", () => {
   $("#loadingwrapper").css({
@@ -99,6 +101,6 @@ function removeLoader() {
     $("#loadingwrapper").remove();
   });
 }
-
+//COUNTER
 
 
