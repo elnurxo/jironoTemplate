@@ -6,6 +6,7 @@ $(function () {
     delay: 0,
   });
   // Counter Plugin
+  $(".num").counterUp({delay:10,time:1000})
   // Hamburger Click
   $("#hamburgerclick").click(function () {
     if ($("#midline").width() == "30") {
@@ -40,6 +41,7 @@ $(function () {
   function removeNavbarAccordion() {
     $(".dropdownnav").css({ height: "0px", transition: ".3s linear" });
   }
+  //NAVBAR SCROLL
   $(document).scroll(function () {
     if ($(window).width() > 992) {
       if (window.scrollY < 60) {
@@ -54,14 +56,10 @@ $(function () {
         $(".buttons").css({ "line-height": "100px", transition: ".3s" });
         $(".myNavbar").css("box-shadow", "none");
       } else {
-        $(".myNavbar").css(
-          "box-shadow",
-          "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
-        );
         $(".myNavbar").css({
           height: "77px",
           "background-color": "#fff",
-          " box-shadow": "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+          "box-shadow": "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
           transition: ".3s",
         });
         $(".logo").css({ height: "77px", transition: ".3s" });

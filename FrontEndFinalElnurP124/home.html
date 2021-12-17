@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Jquery Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <!-- My Script -->
     <script src="assets/Js/script.js" defer></script>
     <!-- Bootstrap Link -->
@@ -31,6 +31,12 @@
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Jirono - IT Solutions and Corporate Template</title>
     <!-- Counter Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"
+        integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <!-- End -->
 
 </head>
@@ -84,7 +90,7 @@
                                 <!-- Pages Dropdown -->
                                 <ul class="dropdownpages">
                                     <li id="goaboutus">
-                                        <a href="#">About Us</a>
+                                        <a href="./pages/aboutus.html">About Us</a>
                                     </li>
                                     <li id="gofeaturespages">
                                         <a href="#">Features</a>
@@ -336,25 +342,25 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="sec4col1 colssec4">
-                            <span class="counter">96</span>
+                            <span class="num">96</span>
                             <h3>Project<br>Complate</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="sec4col2 colssec4">
-                            <span class="counter">190</span>
+                            <span class="num">190</span>
                             <h3>Happy<br>Customer</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="sec4col3 colssec4">
-                            <span class="counter">12</span>
+                            <span class="num">12</span>
                             <h3>Experienced<br>Staff</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="sec4col4 colssec4">
-                            <span  class="counter">46</span>
+                            <span class="num">46</span>
                             <h3>Ongoing<br>Project</h3>
                         </div>
                     </div>
@@ -364,7 +370,7 @@
         <section id="section5home">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-down">
                         <div class="sec5content">
                             <h2>Our Team</h2>
                             <p>Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis
@@ -373,7 +379,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-6 col-sm-12 colofcards" data-aos="fade-up">
                         <div class="cardwrapper">
                             <div class="cardcontent">
                                 <div class="cardheader">
@@ -390,14 +396,93 @@
                                     <li><a href="https://www.facebook.com/" target="_blank"><i
                                                 class="fab fa-github"></i></a></li>
                                 </ul>
+                                <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.
+                                </p>
                                 <div class="cardtext"></div>
                             </div>
-                            <div class="cardimage"></div>
+                            <div class="cardimage">
+                                <img src="http://demo.tempload.com/jirono/assets/images/photos/team/1.jpg" alt="user1">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">ABD</div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">DSS</div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">FSC</div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 colofcards" data-aos="fade-up">
+                        <div class="cardwrapper">
+                            <div class="cardcontent">
+                                <div class="cardheader">
+                                    <h3>Fletch Skinner</h3>
+                                    <span>Product Strategist</span>
+                                </div>
+                                <ul class="cardsocial">
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                class="fab fa-github"></i></a></li>
+                                </ul>
+                                <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.
+                                </p>
+                                <div class="cardtext"></div>
+                            </div>
+                            <div class="cardimage">
+                                <img src="http://demo.tempload.com/jirono/assets/images/photos/team/2.jpg" alt="user2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 colofcards" data-aos="fade-up">
+                        <div class="cardwrapper">
+                            <div class="cardcontent">
+                                <div class="cardheader">
+                                    <h3>Fletch Skinner</h3>
+                                    <span>Product Strategist</span>
+                                </div>
+                                <ul class="cardsocial">
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                class="fab fa-github"></i></a></li>
+                                </ul>
+                                <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.
+                                </p>
+                                <div class="cardtext"></div>
+                            </div>
+                            <div class="cardimage">
+                                <img src="http://demo.tempload.com/jirono/assets/images/photos/team/3.jpg" alt="user3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 colofcards" data-aos="fade-up">
+                        <div class="cardwrapper">
+                            <div class="cardcontent">
+                                <div class="cardheader">
+                                    <h3>Fletch Skinner</h3>
+                                    <span>Product Strategist</span>
+                                </div>
+                                <ul class="cardsocial">
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                class="fab fa-github"></i></a></li>
+                                </ul>
+                                <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.
+                                </p>
+                                <div class="cardtext"></div>
+                            </div>
+                            <div class="cardimage">
+                                <img src="http://demo.tempload.com/jirono/assets/images/photos/team/4.jpg" alt="user4">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -513,7 +598,8 @@
                 <div class="row align-items-center">
                     <div class="col-lg-12">
                         <div class="contentsec7">
-                            <p>We design and develop <span>web apps</span> that delight your users and grow your business.</p>
+                            <p>We design and develop <span>web apps</span> that delight your users and grow your
+                                business.</p>
                             <a href="#">CONTACT US</a>
                         </div>
                     </div>
@@ -521,7 +607,7 @@
             </div>
         </section>
         <section id="section8home">
-             <div class="container">
+            <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6" data-aos="fade-down">
                         <div class="sec8content">
@@ -539,7 +625,8 @@
                             </div>
                             <div class="blogcontent">
                                 <h3><a href="#">Jirono Expands the Leadership Team with David Lin, Controller</a></h3>
-                                <p>Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem vitae purus tempus dignissim.</p>
+                                <p>Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem
+                                    vitae purus tempus dignissim.</p>
                                 <a href="#" class="readmoresec8">READ MORE</a>
                             </div>
                         </div>
@@ -551,7 +638,8 @@
                             </div>
                             <div class="blogcontent">
                                 <h3><a href="#">Jirono Partners with Velocloud to Deliver Managed SD-WAN</a></h3>
-                                <p>Cras imperdiet faucibus sem, a dignissim urna feugiat sed. Interdum et malesuada fames ac ante ipsum.</p>
+                                <p>Cras imperdiet faucibus sem, a dignissim urna feugiat sed. Interdum et malesuada
+                                    fames ac ante ipsum.</p>
                                 <a href="#" class="readmoresec8">READ MORE</a>
                             </div>
                         </div>
@@ -563,14 +651,15 @@
                             </div>
                             <div class="blogcontent">
                                 <h3><a href="#">Corporate IT Solutions Adds Neva as Senior Account Executive</a></h3>
-                                <p>Quisque euismod nec lacus sit amet maximus. Ut convallis sagittis lorem auctor malesuada. Morbi auctor tortor.</p>
+                                <p>Quisque euismod nec lacus sit amet maximus. Ut convallis sagittis lorem auctor
+                                    malesuada. Morbi auctor tortor.</p>
                                 <a href="#" class="readmoresec8">READ MORE</a>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
-             </div>
+            </div>
         </section>
     </main>
     <!-- Main End -->
@@ -687,4 +776,5 @@
     </footer>
     <!-- Footer End -->
 </body>
+
 </html>
