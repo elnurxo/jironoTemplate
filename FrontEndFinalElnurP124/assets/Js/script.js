@@ -99,6 +99,5 @@ function removeLoader() {
     $("#loadingwrapper").remove();
   });
 }
-//COUNTER
 
 
