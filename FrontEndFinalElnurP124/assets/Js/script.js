@@ -95,7 +95,30 @@ $(function () {
       })
     }
   })
+  //FAQS SECTION ACCORDION
+  let check=true;
+  $(document).on("click",".card-header",function(){
+    if(check){
+      check=false;
+      if ($(".active")[0]!=$(this).next()[0]) {
+        $(".active").slideUp(500,function(){
+          $(this).removeClass("active");
+        });
+        $(this).next().slideDown(400,function(){
+          $(this).addClass("active");
+          check=true;
+        })
+      }
+      else{
+        $(".active").slideUp(400,function(){
+          $(this).removeClass("active");
+          check=true;
+        })
+      }
+    }
+  })
 });
+
 //SELECT PRICE TABLE
 let selectplan = document.querySelectorAll(".selectplan");
 selectplan.forEach((ev) => {

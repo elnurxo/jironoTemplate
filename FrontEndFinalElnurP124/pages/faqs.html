@@ -1,196 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- Jquery Script -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-   <!-- My Script -->
-   <script src="../assets/Js/script.js" defer></script>
-   <!-- Bootstrap Link -->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   <!-- My Css -->
-   <link rel="stylesheet" href="../assets/css/style.css">
-   <!-- Fav Ico -->
-   <link rel="icon" type="image/x-icon" href="../assets/Media/favicon.ico">
-   <!-- Google Fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link
-       href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Libre+Baskerville:wght@700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Roboto+Slab:wght@200;300;400;500;600;700&display=swap"
-       rel="stylesheet">
-   <!-- Font Awesome -->
-   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
-       integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
-   <!-- AOS Plugin Css -->
-   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-   <!-- AOS Plugin JS-->
-   <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   <title>Jirono - IT Solutions and Corporate Template</title>
-     <!-- Counter Plugin -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"
-     integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g=="
-     crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-     integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-     crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <!-- Jquery Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <!-- My Script -->
+    <script src="../assets/Js/script.js" defer></script>
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- My Css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Fav Ico -->
+    <link rel="icon" type="image/x-icon" href="../assets/Media/favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Libre+Baskerville:wght@700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Roboto+Slab:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+    <!-- AOS Plugin Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS Plugin JS-->
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Jirono - IT Solutions and Corporate Template</title>
+    <!-- Counter Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"
+        integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <!-- End -->
 </head>
+
 <body>
-            <!-- Loading Start -->
-            <div id="loadingwrapper">
-                <div id="loading">
-                    <div id="shadow"></div>
-                    <div id="box"></div>
-                </div>
-            </div>
-                <!-- Loading End -->
-        <!-- Navbar Start -->
-        <header>
-            <div class="myNavbar myNavbarothers">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-2 col-md-6 col-sm-6 col-6">
-                            <div class="logo logoothers">
-                                <a href="../home.html">
-                                    <img src="../assets/Media/navbarLogo.png" alt="logo">
-                                </a>
-                            </div>
+    <!-- Loading Start -->
+    <div id="loadingwrapper">
+        <div id="loading">
+            <div id="shadow"></div>
+            <div id="box"></div>
+        </div>
+    </div>
+    <!-- Loading End -->
+    <!-- Navbar Start -->
+    <header>
+        <div class="myNavbar myNavbarothers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                        <div class="logo logoothers">
+                            <a href="../home.html">
+                                <img src="../assets/Media/navbarLogo.png" alt="logo">
+                            </a>
                         </div>
-                        <div class="col-lg-6 linkscol">
-                            <ul class="links linksothers">
-                                <li class="homelink">
-                                    <a href="../home.html">Home</a>
-                                </li>
-                                <li class="discoverlink">
-                                    <a>Discover <i class="far fa-angle-down"></i></a>
-                                    <!-- Discover Dropdown -->
-                                    <ul class="dropdowndiscover">
-                                        <li id="gofeatures">
-                                            <a href="../home.html#section2home">Features</a>
-                                        </li>
-                                        <li id="goourteam">
-                                            <a href="../home.html#section5home">Our Team</a>
-                                        </li>
-                                        <li id="gopricingtable">
-                                            <a href="../home.html#section6home">Pricing Tables</a>
-                                        </li>
-                                        <li id="golatestblogs">
-                                            <a href="../home.html#section8home">Latest Blogs</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="pageslink">
-                                    <a href="#">Pages <i class="far fa-angle-down"></i></a>
-                                    <!-- Pages Dropdown -->
-                                    <ul class="dropdownpages">
-                                        <li id="goaboutus">
-                                            <a href="./aboutus.html">About Us</a>
-                                        </li>
-                                        <li id="gofeaturespages">
-                                            <a href="./features.html">Features</a>
-                                        </li>
-                                        <li id="gofaqs">
-                                            <a href="./faqs.html">FAQ's</a>
-                                        </li>
-                                        <li id="goblog">
-                                            <a href="./blog.html">Blog</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="contactlink">
-                                    <a href="./contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 buttonscol">
-                            <div class="buttons buttonsothers">
-                                <ul>
-                                    <li>
-                                        <a id="signin" href="#">SIGN IN</a>
+                    </div>
+                    <div class="col-lg-6 linkscol">
+                        <ul class="links linksothers">
+                            <li class="homelink">
+                                <a href="../home.html">Home</a>
+                            </li>
+                            <li class="discoverlink">
+                                <a>Discover <i class="far fa-angle-down"></i></a>
+                                <!-- Discover Dropdown -->
+                                <ul class="dropdowndiscover">
+                                    <li id="gofeatures">
+                                        <a href="../home.html#section2home">Features</a>
                                     </li>
-                                    <li>
-                                        <a id="signup" href="#">SIGN UP</a>
+                                    <li id="goourteam">
+                                        <a href="../home.html#section5home">Our Team</a>
+                                    </li>
+                                    <li id="gopricingtable">
+                                        <a href="../home.html#section6home">Pricing Tables</a>
+                                    </li>
+                                    <li id="golatestblogs">
+                                        <a href="../home.html#section8home">Latest Blogs</a>
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-6 hamburgercolumn">
-                            <div class="hamburgermenu">
-                                <a href="#" id="hamburgerclick">
-                                    <span id="topline"></span>
-                                    <span id="midline"></span>
-                                    <span id="bottomline"></span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="dropdownnav">
+                            </li>
+                            <li class="pageslink">
+                                <a href="#">Pages <i class="far fa-angle-down"></i></a>
+                                <!-- Pages Dropdown -->
+                                <ul class="dropdownpages">
+                                    <li id="goaboutus">
+                                        <a href="./aboutus.html">About Us</a>
+                                    </li>
+                                    <li id="gofeaturespages">
+                                        <a href="./features.html">Features</a>
+                                    </li>
+                                    <li id="gofaqs">
+                                        <a href="./faqs.html">FAQ's</a>
+                                    </li>
+                                    <li id="goblog">
+                                        <a href="./blog.html">Blog</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="contactlink">
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 buttonscol">
+                        <div class="buttons buttonsothers">
                             <ul>
-                                <li class="notdroplinksnav"><a href="../home.html" class="notdroplinksnav">Home</a></li>
-                                <li class="dropdownlinksnav"><a>Discover</a>
-                                    <i class="far fa-angle-down"></i>
+                                <li>
+                                    <a id="signin" href="#">SIGN IN</a>
                                 </li>
-                                <ul class="dropdownnavinside">
-                                    <li><a href="../home.html#section2home">Features</a></li>
-                                    <li><a href="../home.html#section5home">Our Team</a></li>
-                                    <li><a href="../home.html#section6home">Pricing Plans</a></li>
-                                    <li><a href="../home.html#section8home">Latest Blogs</a></li>
-                                </ul>
-                                <li class="dropdownlinksnav"><a>Pages</a>
-                                    <i class="far fa-angle-down"></i>
+                                <li>
+                                    <a id="signup" href="#">SIGN UP</a>
                                 </li>
-                                <ul class="dropdownnavinside">
-                                    <li><a href="./aboutus.html">About Us</a></li>
-                                    <li><a href="./features.html">Features</a></li>
-                                    <li><a href="./faqs.html">FAQ's</a></li>
-                                    <li><a href="./blog.html">Blog</a></li>
-                                </ul>
-                                <li><a href="" class="notdroplinksnav">Contact</a></li>
                             </ul>
                         </div>
                     </div>
+                    <div class="col-md-6 col-sm-6 col-6 hamburgercolumn">
+                        <div class="hamburgermenu">
+                            <a href="#" id="hamburgerclick">
+                                <span id="topline"></span>
+                                <span id="midline"></span>
+                                <span id="bottomline"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dropdownnav">
+                        <ul>
+                            <li class="notdroplinksnav"><a href="../home.html" class="notdroplinksnav">Home</a></li>
+                            <li class="dropdownlinksnav"><a>Discover</a>
+                                <i class="far fa-angle-down"></i>
+                            </li>
+                            <ul class="dropdownnavinside">
+                                <li><a href="../home.html#section2home">Features</a></li>
+                                <li><a href="../home.html#section5home">Our Team</a></li>
+                                <li><a href="../home.html#section6home">Pricing Plans</a></li>
+                                <li><a href="../home.html#section8home">Latest Blogs</a></li>
+                            </ul>
+                            <li class="dropdownlinksnav"><a>Pages</a>
+                                <i class="far fa-angle-down"></i>
+                            </li>
+                            <ul class="dropdownnavinside">
+                                <li><a href="./aboutus.html">About Us</a></li>
+                                <li><a href="./features.html">Features</a></li>
+                                <li><a href="./faqs.html">FAQ's</a></li>
+                                <li><a href="./blog.html">Blog</a></li>
+                            </ul>
+                            <li><a href="./contact.html" class="notdroplinksnav">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-        </header>
-        <!-- Navbar End -->
-         <!-- Main Start -->
-         <main>
-             <section id="section1faqs">
-                <div class="overlaysec1faqs">
-                </div>
-                <div class="container">
-                    <div class="row align-items-center">
-                       <div class="col-lg-12">
-                           <div class="contentsec1faqs">
+            </div>
+    </header>
+    <!-- Navbar End -->
+    <!-- Main Start -->
+    <main>
+        <section id="section1faqs">
+            <div class="overlaysec1faqs">
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <div class="contentsec1faqs">
                             <h1>FAQ's</h1>
                             <ul class="sec1contentfaqs">
                                 <li><a href="../home.html">Home </a></li>
                                 <li><i class="fas fa-angle-right"></i> FAQ's Us</li>
-                            </ul>                  
-                           </div>
-                       </div>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-             </section>
-             <section id="section2faqs">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div class="askedquestion">
-                                <h2>Frequently Asked Questions</h2>
-                                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed finibus faucibus congue. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                                <a href="#">GET MORE HELP</a>
+            </div>
+        </section>
+        <section id="section2faqs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-up">
+                        <div class="askedquestion">
+                            <h2>Frequently Asked Questions</h2>
+                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                                Sed finibus faucibus congue. Interdum et malesuada fames ac ante ipsum primis in
+                                faucibus.</p>
+                            <a href="#">GET MORE HELP</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-right">
+                        <div class="faqsaccordion">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>How does Jirono Internet work?</h5>
+                                </div>
+                                <div class="card-body active">
+                                    <p>Aliquam erat odio, fringilla at porta a, vehicula ultricies est. Aliquam maximus
+                                        turpis in dignissim pellentesque. Ut dolor quam, aliquam eget bibendum nec,
+                                        luctus non metus. Morbi convallis.</p>
+                                    <p> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                        Curae; Sed finibus faucibus congue.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>How fast is the Jirono Internet service?</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>Aliquam erat odio, fringilla at porta a, vehicula ultricies est. Aliquam maximus
+                                        turpis in dignissim pellentesque. Ut dolor quam, aliquam eget bibendum nec,
+                                        luctus non metus. Morbi convallis.</p>
+                                    <p> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                        Curae; Sed finibus faucibus congue.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Can I keep my home phone number?</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>Aliquam erat odio, fringilla at porta a, vehicula ultricies est. Aliquam maximus
+                                        turpis in dignissim pellentesque. Ut dolor quam, aliquam eget bibendum nec,
+                                        luctus non metus. Morbi convallis.</p>
+                                    <p> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                        Curae; Sed finibus faucibus congue.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12">
-                            
-                        </div>
                     </div>
                 </div>
-             </section>
-         </main>
-             <!-- Main End -->
+            </div>
+        </section>
+        <section id="section3faqs">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-6 col-md-12 sec2leftside">
+                        <h2>Cloud Services</h2>
+                        <p>Phasellus vitae velit sit amet diam semper commodo quis quis libero. Morbi consequat arcu
+                            augue, molestie faucibus metus ullamcorper vel.</p>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 secbuttons">
+                                <a href="#" id="firstasec2">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>NearCloud</span>
+                                </a>
+                                <a href="#" class="othersasec2">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>Backup Systems</span>
+                                </a>
+                                <a href="#" class="othersasec2">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>API Cloud</span>
+                                </a>
+                                <a href="#" class="othersasec2">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>Web Services</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 secbuttons">
+                                <a href="#" class="othersasec2">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>Office Cloud</span>
+                                </a>
+                                <a href="#" class="othersasec2">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>Hybrid Cloud</span>
+                                </a>
+                                <a href="#" class="othersasec2">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>SDK Cloud</span>
+                                </a>
+                                <a href="#" class="othersasec2">
+                                    <i class="far fa-angle-right"></i>
+                                    <span>Cloud Hosting</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 sec2rightside" data-aos="fade-right">
+                        <img src="http://demo.tempload.com/jirono/assets/images/photos/features/blue-1.png"
+                            alt="section2image">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Main End -->
     <!-- Footer Start -->
     <footer>
         <div class="container">
@@ -302,6 +396,7 @@
             </div>
         </div>
     </footer>
-    <!-- Footer End -->    
+    <!-- Footer End -->
 </body>
+
 </html>
