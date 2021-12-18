@@ -1,4 +1,4 @@
-#section1features{
+#section1features {
     background-image: url("http://demo.tempload.com/jirono/assets/images/photos/home/2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -61,5 +61,253 @@
                 font-size: 12px;
             }
         }
+    }
+}
+
+#section2features {
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+    .servicecards {
+        text-decoration: none;
+        padding: 30px;
+        background: #fff;
+        box-shadow: 0 2px 48px 0 rgb(0 0 0 / 8%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+
+        &:hover {
+            .serviceicon::before {
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    .serviceicon {
+        min-width: 166px;
+        min-height: 166px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 133px;
+            height: 133px;
+            border-radius: 5px;
+            background: #F7FAFD;
+            transition: .2s ease-in-out;
+        }
+
+        img {
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    .servicecontent {
+        width: calc(100%-166px);
+        padding-left: 30px;
+        letter-spacing: 0.8px;
+        line-height: 27px;
+
+        h5 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: tools.$color_writings_dark;
+        }
+
+        p {
+            font-size: 14px;
+            color: tools.$color_writings_light;
+        }
+    }
+}
+
+#section3feature {
+    background-image: url("../Media/parallaxsectionimage.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+
+    .colssec4 {
+        text-align: center;
+        padding: 85px 0px;
+        cursor: pointer;
+        transition: .4s;
+
+        &:hover {
+            transform: translateY(-7%);
+        }
+
+        span {
+            font-size: 40px;
+            letter-spacing: 1.7px;
+            color: white;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 50%;
+                margin: 0 auto;
+                width: 115px;
+                height: 1px;
+                border-top: 1px dashed #fff;
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+            letter-spacing: 0.9px;
+            color: white;
+            margin-top: 18px;
+            margin-bottom: 0;
+            line-height: 30px;
+        }
+    }
+
+    .overlaysec3feature {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #585de9c0;
+    }
+}
+
+#section4feature {
+    background: #F7FAFD;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    .sec2featurerightside {
+        align-self: center;
+    
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    .othersasec2 {
+        &:hover {
+            &::before {
+                background-color: #585CE9;
+                width: 65px;
+            }
+    
+            span {
+                padding-left: 8px;
+            }
+    
+            i {
+                color: white;
+            }
+        }
+    }
+    
+    .sec2featureleftside {
+        h2 {
+            font-weight: 400;
+            font-size: 28px;
+            color: tools.$color_writings_dark;
+            letter-spacing: 1.7px;
+            height: 45px;
+            margin-bottom: 10px;
+        }
+    
+        p {
+            margin-bottom: 30px;
+            font-size: 16px;
+            font-weight: 400;
+            color: tools.$color_writings_light;
+            line-height: 28px;
+            letter-spacing: 1px;
+        }
+    
+        .secbuttons {
+            a {
+                text-decoration: none;
+                display: block;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                line-height: 40px;
+                border-radius: 5px;
+                background: tools.$color_white;
+                margin-bottom: 26px;
+                font-size: 14px;
+                letter-spacing: 0.9px;
+                cursor: pointer;
+                transition: .3s;
+    
+                &::before {
+                    content: "";
+                    position: absolute;
+                    clip-path: polygon(0 0, 62% 0, 100% 100%, 0% 100%);
+                    background-color: #F7FAFD;
+                    width: 55px;
+                    height: 40px;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    transition: .3s;
+                }
+    
+                i {
+                    position: relative;
+                    color: tools.$color_writings_dark;
+                    margin-left: 25px;
+                    margin-right: 37px;
+                    transition: .3s;
+                }
+    
+                span {
+                    color: tools.$color_writings_dark;
+                    transition: .3s;
+                }
+            }
+    
+            #firstasec2 {
+                &::before {
+                    background-color: #585CE9;
+                    width: 65px;
+                }
+    
+                i {
+                    color: white;
+                }
+            }
+    
+    
+        }
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .servicecards {
+        display: block !important;
+        text-align: center;
+    }
+
+    .serviceicon {
+        width: 100% !important;
+    }
+
+    .servicecontent {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .serviceicon::before {
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto;
     }
 }
