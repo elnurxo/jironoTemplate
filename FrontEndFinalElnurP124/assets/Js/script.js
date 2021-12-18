@@ -33,6 +33,16 @@ $(function () {
       removeNavbarAccordion();
     }
   });
+  //REMOVE DROPDWONNAV WHEN CLICK DISCOVER
+  $(document).on("click",".dropdownnavinside li",function(){
+    removeNavbarAccordion()
+    $("#topline").css({ transform: "rotate(0)", width: "21px" });
+    $("#midline").css({ opacity: "1", width: "30px" });
+    $("#bottomline").css({ transform: "rotate(0)", width: "21px" });
+    $(".active").slideUp(500,function(){
+      $(this).removeClass("active");
+    })
+  })
 
   function addNavbarAccordion() {
     $(".dropdownnav").css({ height: "200px", transition: ".3s linear" });
@@ -46,7 +56,6 @@ $(function () {
     if ($(window).width() > 992) {
       if (window.scrollY < 60) {
         $(".myNavbar").css({
-          height: "77px",
           "background-color": "transparent",
           "box-shadow": "0",
           transition: ".3s",
@@ -68,6 +77,24 @@ $(function () {
       }
     }
   });
+  //NAVBAR DROP DROP DOWN 2X
+  $(document).on("click",".dropdownlinksnav",function(){
+    if ($(".active")[0]!=$(this).next()[0]) {
+      $(".dropdownnav").css({ height: "408px", transition: ".5s" });
+      $(".active").slideUp(500,function(){
+        $(this).removeClass("active");
+      });
+      $(this).next().slideDown(500,function(){
+        $(this).addClass("active");
+      })
+    }
+    else{
+      $(".dropdownnav").css({ height: "200px", transition: ".5s" });
+      $(".active").slideUp(500,function(){
+        $(this).removeClass("active");
+      })
+    }
+  })
 });
 //SELECT PRICE TABLE
 let selectplan = document.querySelectorAll(".selectplan");

@@ -25,20 +25,19 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
-    <!-- AOS Plugin Css -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- AOS Plugin JS-->
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Jirono - IT Solutions and Corporate Template</title>
-    <!-- Counter Plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"
-        integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-    <!-- End -->
-
+     <!-- AOS Plugin Css -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- AOS Plugin JS-->
+     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <title>Jirono - IT Solutions and Corporate Template</title>
+     <!-- Counter Plugin -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"
+         integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+         integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+     <!-- End -->
 </head>
 
 <body>
@@ -57,7 +56,7 @@
                 <div class="row">
                     <div class="col-lg-2 col-md-6 col-sm-6 col-6">
                         <div class="logo">
-                            <a href="#">
+                            <a href="./home.html">
                                 <img src="assets/Media/navbarLogo.png" alt="logo">
                             </a>
                         </div>
@@ -65,7 +64,7 @@
                     <div class="col-lg-6 linkscol">
                         <ul class="links">
                             <li class="homelink">
-                                <a href="#">Home</a>
+                                <a href="./home.html">Home</a>
                             </li>
                             <li class="discoverlink">
                                 <a href="#">Discover <i class="far fa-angle-down"></i></a>
@@ -131,14 +130,26 @@
                     </div>
                     <div class="dropdownnav">
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Discover</a>
+                            <li class="notdroplinksnav"><a href="home.html" class="notdroplinksnav">Home</a></li>
+                            <li class="dropdownlinksnav"><a>Discover</a>
                                 <i class="far fa-angle-down"></i>
                             </li>
-                            <li><a href="">Pages</a>
+                            <ul class="dropdownnavinside">
+                                <li><a href="#section2home">Features</a></li>
+                                <li><a href="#section5home">Our Team</a></li>
+                                <li><a href="#section6home">Pricing Plans</a></li>
+                                <li><a href="#section8home">Latest Blogs</a></li>
+                            </ul>
+                            <li class="dropdownlinksnav"><a>Pages</a>
                                 <i class="far fa-angle-down"></i>
                             </li>
-                            <li><a href="">Contact</a></li>
+                            <ul class="dropdownnavinside">
+                                <li><a href="./pages/aboutus.html">About Us</a></li>
+                                <li><a href="./pages/features.html">Features</a></li>
+                                <li><a href="./pages/faqs.html">FAQ's</a></li>
+                                <li><a href="./pages/blogs.html">Blog</a></li>
+                            </ul>
+                            <li><a href="" class="notdroplinksnav">Contact</a></li>
                         </ul>
                     </div>
                 </div>
