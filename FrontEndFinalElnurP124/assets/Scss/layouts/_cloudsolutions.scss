@@ -1,0 +1,233 @@
+#section1cloud {
+    background-image: url("http://demo.tempload.com/jirono/assets/images/photos/home/2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    margin-top: 77px;
+
+    .overlaysec1cloud {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #585de9b0;
+    }
+
+    .contentsec1cloud {
+        text-align: center;
+        padding-top: 120px;
+        padding-bottom: 70px;
+
+        h1 {
+            color: tools.$color_white;
+            font-size: 36px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 19px;
+                height: 2px;
+                margin: auto;
+                background: white;
+            }
+        }
+    }
+
+    .sec1contentcloud {
+        padding-top: 3px;
+
+        li {
+            display: inline-block;
+            color: tools.$color_white;
+
+            a {
+                text-decoration: none;
+                color: tools.$color_white;
+                font-size: 16px;
+                transition: .3s;
+
+                &:hover {
+                    color: rgb(22, 22, 22);
+                }
+            }
+
+            i {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+#section2cloud {
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+    .leftsidecloud{
+        p{
+            margin-bottom: 30px;
+            font-size: 16px;
+            letter-spacing: 0.9px;
+            line-height: 30px;
+            color: tools.$color_writings_light;
+        }
+        .imagewrappercloud{
+            margin-bottom: 30px;
+            border-radius: 5px;
+            overflow: hidden;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                filter: brightness(88%);
+                transition: .3s;
+                &:hover{
+                    filter: brightness(100%);
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .smallimgcloud{
+            margin-bottom: 30px;
+            border-radius: 5px;  
+            height: 185px; 
+            overflow: hidden;
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                    filter: brightness(100%);
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: brightness(85%);
+                transition: .3s;
+            }
+        }
+    }
+    .rightsidecloud {
+        .infocards {
+            background: tools.$color_white;
+            box-shadow: 0 2px 48px 0 rgb(0 0 0 / 6%);
+            margin-bottom: 30px;
+
+            a {
+                position: relative;
+                text-decoration: none;
+                display: block;
+                height: 50px;
+                line-height: 50px;
+                padding-left: 60px;
+                font-size: 14px;
+                color: tools.$color_writings_dark;
+                letter-spacing: 0.9px;
+                border-bottom: 1px solid #ECF7FF;
+                transition: .3s linear;
+                span {
+                    font-size: 10px;
+                    float: right;
+                    margin-right: 30px;
+                    background: tools.$color_purple;
+                    height: 20px;
+                    line-height: 20px;
+                    margin-top: 18px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    border-radius: 100px;
+                    color: tools.$color_white;
+                    transition: .3s linear;
+                }
+
+                i {
+                    position: absolute;
+                    left: 30px;
+                    top: 18px;
+                    font-size: 12px;
+                }
+            }
+            .hoveredtags{
+                &:hover {
+                    padding-left: 75px;
+
+                    span {
+                        background: #323588;
+                    }
+                }
+            }
+
+            .toptagcloud {
+                background-image: linear-gradient(135deg, #585CE9 0%, #5C83E3 100%);
+                color: tools.$color_white;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+        }
+
+        .contactuscloud {
+            width: 100%;
+            height: 231px;
+            text-align: center;
+            position: relative;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            overflow: hidden;
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+
+            .overlayblogs {
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                background-color: #585de9c0;
+                display: flex;
+                align-items: center;
+
+                p {
+                    color: tools.$color_white;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 30px;
+                    letter-spacing: 1.1px;
+                    margin-bottom: 30px;
+                    padding: 0 30px;
+                }
+
+                a {
+                    text-decoration: none;
+                    width: 160px;
+                    display: inline-block;
+                    height: 44px;
+                    line-height: 44px;
+                    text-align: center;
+                    border-radius: 5px;
+                    background: #fff;
+                    color: tools.$color_purple;
+                    letter-spacing: 0.8px;
+                    font-weight: 700;
+                    font-size: 12px;
+                }
+            }
+
+            img {
+                position: relative;
+                border-radius: 5px;
+                height: 231px;
+                width: 100%;
+                transition: .3s ease-in-out;
+            }
+        }
+    }
+}

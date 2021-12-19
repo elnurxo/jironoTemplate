@@ -149,4 +149,17 @@ function removeLoader() {
     $("#loadingwrapper").remove();
   });
 }
+//MAP
+function initMap(){
+  let locationBaku = {lat: 40.4093, lng: 49.8671 };
+  let map = new google.maps.Map(document.getElementById("map"),{
+      zoom: 15,
+      center: locationBaku
+      
+  });
+  let marker = new google.maps.Marker({
+      position: loc,
+      map: map
+  })
+}
 
