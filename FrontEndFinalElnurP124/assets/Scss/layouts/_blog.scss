@@ -67,17 +67,45 @@
     padding-top: 100px;
     padding-bottom: 70px;
     .posts{
-        border: 1px solid blue;
         margin-bottom: 30px;
         text-align: center;
         background: #fff;
         box-shadow: 0 2px 48px 0 rgb(0 0 0 / 6%);
         border-radius: 5px;
+        overflow: hidden;
         .postitem{
-            // border: 1px solid red;
-            img{
-                height: 100%;
+            .postimage{
+                height: 400px;
                 width: 100%;
+                position: relative;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .commentperson{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                a{
+                    margin-right: 5%;
+                }
+            }
+            h3{
+                a{
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: tools.$color_writings_dark;
+                }
+            }
+            p{
+                padding-right: 30px;
+                padding-left: 30px;
+                font-size: 14px;
+                color: tools.$color_writings_light;
+                letter-spacing: 0.9px;
+                margin-bottom: 15px;
+                line-height: 26px;
             }
         }
     }

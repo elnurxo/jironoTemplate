@@ -2457,17 +2457,45 @@ html {
   padding-bottom: 70px;
 }
 #section2blog .posts {
-  border: 1px solid blue;
   margin-bottom: 30px;
   text-align: center;
   background: #fff;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
           box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
   border-radius: 5px;
+  overflow: hidden;
 }
-#section2blog .posts .postitem img {
+#section2blog .posts .postitem .postimage {
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+#section2blog .posts .postitem .postimage img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#section2blog .posts .postitem .commentperson {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#section2blog .posts .postitem .commentperson a {
+  margin-right: 5%;
+}
+#section2blog .posts .postitem h3 a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #3B566E;
+}
+#section2blog .posts .postitem p {
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 14px;
+  color: #6F8BA4;
+  letter-spacing: 0.9px;
+  margin-bottom: 15px;
+  line-height: 26px;
 }
 #section2blog .rightsideblog .search {
   margin-bottom: 30px;
