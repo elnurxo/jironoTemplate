@@ -67,27 +67,75 @@
     padding-top: 100px;
     padding-bottom: 70px;
     .posts{
-        margin-bottom: 30px;
         text-align: center;
-        background: #fff;
-        box-shadow: 0 2px 48px 0 rgb(0 0 0 / 6%);
         border-radius: 5px;
-        overflow: hidden;
         .postitem{
-            .postimage{
+            transition: .2s;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                    filter: brightness(100%);
+                }
+            }
+            .postimagebig{
                 height: 400px;
+            }
+            .postimagesmall{
+                height: 242px;
+            }
+            .postimage{
                 width: 100%;
                 position: relative;
+                overflow: hidden;
+                .dateimage{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 100px;
+                    height: 30px;
+                    z-index: 100;
+                    margin: auto;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        background: #000;
+                        opacity: 0.3;
+                        z-index: -1;
+                    }
+                    span{
+                        color: white;
+                    }  letter-spacing: 1px;
+                }
                 img{
                     height: 100%;
                     width: 100%;
                     object-fit: cover;
+                    transition: .3s;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    filter: brightness(90%);
                 }
             }
             .commentperson{
-                padding-top: 20px;
-                padding-bottom: 20px;
+                padding-top: 17px;
+                padding-bottom: 17px;
                 a{
+                    text-align: center;
+                    font-size: 14px;
+                    color: tools.$color_purple;
+                    text-decoration: none;
+                }
+                #usertag{
                     margin-right: 5%;
                 }
             }
@@ -95,6 +143,9 @@
                 a{
                     text-decoration: none;
                     font-size: 16px;
+                    letter-spacing: 1px;
+                    padding-left: 21px;
+                    padding-right: 21px;
                     color: tools.$color_writings_dark;
                 }
             }
@@ -104,10 +155,48 @@
                 font-size: 14px;
                 color: tools.$color_writings_light;
                 letter-spacing: 0.9px;
-                margin-bottom: 15px;
+                margin-bottom: 20px;
                 line-height: 26px;
             }
+            #readmoreblog{
+                text-decoration: none;
+                background: tools.$color_purple;
+                margin-bottom: 30px;
+                width: 160px;
+                height: 44px;
+                line-height: 44px;
+                display: inline-block;
+                text-align: center;
+                font-weight: 700;
+                font-size: 12px;
+                color: tools.$color_white;
+                letter-spacing: 0.8px;
+                cursor: pointer;
+                outline: none;
+                border-radius: 5px;
+                transition: .3s ease-in-out;
+                &:hover{
+                    background: #4145af;
+                    transform: scale(0.94);
+                }
+            }
         }
+    }
+    nav{
+       ul{
+           margin-top: 30px;
+           margin-bottom: 30px;
+           li{
+               a{
+                   text-decoration: none;
+                   padding: 8px 12px;
+                   margin-left: -1px;
+                   border: 1px solid #dee2e6;
+                   border-radius: 5px;
+               }
+           }
+       }
+
     }
     .rightsideblog{
         .search{
