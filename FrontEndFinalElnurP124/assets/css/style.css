@@ -34,7 +34,7 @@ body::-webkit-scrollbar-thumb {
   visibility: hidden;
   opacity: 0;
   overflow: hidden;
-  background-image: linear-gradient(135deg, #585CE9 0%, #5C83E3 100%);
+  background: #585CE9;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -2453,17 +2453,193 @@ html {
 }
 
 #section2blog {
-  border: 1px solid hotpink;
   padding-top: 100px;
   padding-bottom: 70px;
 }
 #section2blog .posts {
+  border: 1px solid blue;
   margin-bottom: 30px;
   text-align: center;
   background: #fff;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
           box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
   border-radius: 5px;
+}
+#section2blog .posts .postitem img {
+  height: 100%;
+  width: 100%;
+}
+#section2blog .rightsideblog .search {
+  margin-bottom: 30px;
+  height: 50px;
+  position: relative;
+}
+#section2blog .rightsideblog .search input {
+  border: 1px solid #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 50px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+#section2blog .rightsideblog .search input:focus {
+  padding-left: 35px;
+  border: 1px solid #585CE9;
+}
+#section2blog .rightsideblog .search button {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  height: 35px;
+  width: 35px;
+  border: none;
+  background: #585CE9;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#section2blog .rightsideblog .search button i {
+  color: #FFFFFF;
+}
+#section2blog .rightsideblog .infocards {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 30px;
+}
+#section2blog .rightsideblog .infocards a {
+  position: relative;
+  text-decoration: none;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 60px;
+  font-size: 14px;
+  color: #3B566E;
+  letter-spacing: 0.9px;
+  border-bottom: 1px solid #ECF7FF;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+#section2blog .rightsideblog .infocards a:hover {
+  padding-left: 75px;
+}
+#section2blog .rightsideblog .infocards a:hover span {
+  background: #323588;
+}
+#section2blog .rightsideblog .infocards a span {
+  font-size: 10px;
+  float: right;
+  margin-right: 30px;
+  background: #585CE9;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 100px;
+  color: #FFFFFF;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+#section2blog .rightsideblog .infocards a i {
+  position: absolute;
+  left: 30px;
+  top: 18px;
+  font-size: 12px;
+}
+#section2blog .rightsideblog .tagsblog {
+  padding: 30px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+  background: #fff;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+#section2blog .rightsideblog .tagsblog a {
+  float: left;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: #f5f5f5;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  letter-spacing: 0.9px;
+  line-height: 28px;
+  color: #3B566E;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+#section2blog .rightsideblog .tagsblog a:hover {
+  background: #585CE9;
+  color: #FFFFFF;
+}
+#section2blog .rightsideblog .contactusblog {
+  width: 100%;
+  height: 231px;
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+#section2blog .rightsideblog .contactusblog:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+#section2blog .rightsideblog .contactusblog .overlayblogs {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #585de9c0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#section2blog .rightsideblog .contactusblog .overlayblogs p {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 1.1px;
+  margin-bottom: 30px;
+  padding: 0 30px;
+}
+#section2blog .rightsideblog .contactusblog .overlayblogs a {
+  text-decoration: none;
+  width: 160px;
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  color: #585CE9;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+  font-size: 12px;
+}
+#section2blog .rightsideblog .contactusblog img {
+  position: relative;
+  border-radius: 5px;
+  height: 231px;
+  width: 100%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 #section1contact {
