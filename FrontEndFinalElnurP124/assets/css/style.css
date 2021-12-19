@@ -2394,6 +2394,78 @@ html {
     text-align: center;
   }
 }
+#section1blog {
+  background-image: url("http://demo.tempload.com/jirono/assets/images/photos/home/2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  margin-top: 77px;
+}
+#section1blog .overlaysec1blog {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #585de9b0;
+}
+#section1blog .contentsec1blog {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 70px;
+}
+#section1blog .contentsec1blog h1 {
+  color: #FFFFFF;
+  font-size: 36px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  position: relative;
+}
+#section1blog .contentsec1blog h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 19px;
+  height: 2px;
+  margin: auto;
+  background: white;
+}
+#section1blog .sec1contentblog {
+  padding-top: 3px;
+}
+#section1blog .sec1contentblog li {
+  display: inline-block;
+  color: #FFFFFF;
+}
+#section1blog .sec1contentblog li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#section1blog .sec1contentblog li a:hover {
+  color: #161616;
+}
+#section1blog .sec1contentblog li i {
+  font-size: 12px;
+}
+
+#section2blog {
+  border: 1px solid hotpink;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+#section2blog .posts {
+  margin-bottom: 30px;
+  text-align: center;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+}
+
 #section1contact {
   background-image: url("http://demo.tempload.com/jirono/assets/images/photos/home/2.jpg");
   background-repeat: no-repeat;
@@ -2456,36 +2528,178 @@ html {
   padding-top: 100px;
   padding-bottom: 70px;
 }
-#section2contact .sectionmapwrap {
-  width: 100%;
-  height: 613px;
-  border: 2px solid red;
+#section2contact .mapandinfo {
+  position: relative;
 }
-#section2contact .sectionmapwrap .mapwrapper {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+#section2contact .mapandinfo #map {
   height: 500px;
+  border: 2px solid blue;
   width: 100%;
-  position: relative;
-  border-radius: 7px;
+  border-radius: 6px;
 }
-#section2contact .sectionmapwrap .mapwrapper .map {
-  height: 100%;
-}
-#section2contact .sectionmapwrap .mapwrapper .mapinfo {
-  border: 2px solid green;
+#section2contact .mapandinfo .mapinfo {
   position: relative;
-  width: 80%;
   margin: auto;
-  height: 200px;
+  width: 85%;
   margin-top: -90px;
-  background-color: #87cfeb;
-  z-index: 2;
+  padding: 30px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(135deg, #585CE9 0%, #5C83E3 100%);
+  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+}
+#section2contact .contactcontent {
+  color: white;
+  float: left;
+}
+#section2contact .contactcontent i {
+  font-size: 16px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+}
+#section2contact .contactcontent span {
+  float: left;
+  font-size: 14px;
+  letter-spacing: 0.9px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+#section2contact .contactcontent .fa-location-arrow {
+  margin-top: 8px;
+}
+#section2contact .contactcontent .fa-phone {
+  margin-top: 8px;
+}
+#section2contact .contactcontent .fa-envelope {
+  margin-top: 5px;
+}
+#section2contact .contactcontent a {
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+#section2contact .contactcontent a:hover {
+  color: black;
+}
+#section2contact .socialscontact {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#section2contact .socialscontact li {
+  margin-right: 8px;
+  display: inline-block;
+  font-size: 22px;
+  margin-right: 7px;
+  margin-left: 7px;
+}
+#section2contact .socialscontact li a {
+  text-transform: none;
+}
+#section2contact .socialscontact li a:hover i {
+  color: #e2dddd;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+#section2contact .socialscontact li a i {
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#section2contact .locations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#section3contact {
+  padding-bottom: 100px;
+}
+#section3contact .getintouch {
+  border-top: 1px solid #f5f5f5;
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#section3contact .contentgetintouch {
+  color: #6F8BA4;
+  line-height: 27px;
+}
+#section3contact .contentgetintouch h5 {
+  letter-spacing: 0.9px;
+  margin-bottom: 30px;
+}
+#section3contact .contentgetintouch p {
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  margin-bottom: 24px;
+}
+#section3contact .contactinputs input {
+  width: 100%;
+  border: 1px solid #eee;
+  height: 50px;
+  padding-left: 20px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  outline: none;
+}
+#section3contact .contactinputs input:focus {
+  border: 1px solid #585CE9;
+  padding-left: 30px;
+}
+#section3contact .contactinputs textarea {
+  resize: none;
+  height: 150px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #eee;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  margin-bottom: 30px;
+  outline: none;
+}
+#section3contact .contactinputs textarea:focus {
+  border: 1px solid #585CE9;
+  padding-left: 30px;
+}
+#section3contact .contactinputs .sendbutton {
+  text-decoration: none;
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  width: 160px;
+  text-align: center;
+  border-radius: 5px;
+  background: #585CE9;
+  color: #FFFFFF;
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#section3contact .contactinputs .sendbutton:hover {
+  background: #4649bb;
 }
 
 @media only screen and (max-width: 992px) {
-  .mapwrapper {
-    height: 300px;
+  #map {
+    height: 300px !important;
+  }
+
+  .mapinfo {
+    width: 100% !important;
+    margin-top: 30px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .getintouch {
+    display: block !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
